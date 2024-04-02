@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroPower</title>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+    <!--Connected to main.css-->
+    <link rel="stylesheet" href="css/main.css">
+    
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            
+            <div class="logo">
+                <img src="/img/logo.png" alt="">
+                <a href="">Calculator</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="https://www.hydro.com.au/" target="_blank">Hydro Tasmania</a></li>
+                </ul>
+            </nav>
+
+            <a href="mailto:kazifdev@outlook.com" target="_blank" class="header_cta">Contact us</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="landing_page">
+
+                <h1>Your life in Hydro free Calculators</h1>
+                <div class="arrow-container">
+                    <div class="arrow-down"></div>
+                </div>
+                <div class="container">
+                    <input id="searchbar"
+                        onkeyup="search_calculator()"
+                        type="text" name="search"
+                        placeholder="Search calculator..">
+            
+                        <ul id='list'>
+                            <a href="html/power.html"><li class="card active">Power generation</li></a>
+                            <a href="html/cost.html"><li class="card active">Cost-Benefit</li></a>
+                            <a href="#"><li class="card">Comming soon....</li></a>
+                            <a href="#"><li class="card">Comming soon....</li></a>
+                            <a href="#"><li class="card">Comming soon....</li></a>
+                            <a href="#"><li class="card">Comming soon....</li></a>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+       
+        <p class="copywrite">&copy; ~ Developed By Kazi Faruque ~, 2024</p>
+
+    </footer>
+
+
+
+
+<!--Connected to main.js-->
+<script src="/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>

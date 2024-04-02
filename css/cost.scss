@@ -1,0 +1,220 @@
+:root {
+    --primary-color: rgb(10, 166, 28);
+    --header-color: #ffffff69;
+}
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  p, a {
+    font-size: 1.8rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper {
+    margin: 2.8em;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+  header {
+
+    .wrapper {
+        background-color: var(--header-color) ;
+        padding: 1em 2.8em;
+        border-radius: 3em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: .5em;
+        }
+
+        img {
+            width: 3.5em;
+        }
+        a {
+            color: black;
+            font-weight: 600;
+        }
+
+        nav {
+            display: none;
+        }
+    
+        .header_cta {
+            color: white;
+            font-weight: 500;
+            background-color: var(--primary-color);
+            padding: .5em .9em;
+            border-radius: 2em;
+        }
+        .header_cta:hover {
+            background-color: rgba(10, 166, 28, 0.833) ;
+        }
+
+    }
+
+}
+
+main {
+    background: url(/img/bg.png) no-repeat center center;
+    background-size: cover;
+    height: 1200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+
+    .wrapper{
+        .fa {
+            
+            font-size: 1.9rem;
+            color: black;
+            margin-top: 10em;
+            background-color: rgb(6, 205, 79);
+            padding: .5em;
+            border-radius: .5em;
+            color: white;
+            
+                
+        }
+    }
+
+    .calculator {
+        margin: auto;
+        margin-top: 5em;
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+        border-radius: 5px;
+
+
+        h2 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        label {
+            font-size: 1.6rem;
+        }
+    }
+
+   
+
+    p {
+        margin:auto;
+        margin-top: 2em;
+        width: 100%;
+        //text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.8;
+        //border: 1px solid red;
+    }
+    
+    .input-group {
+        margin-bottom: 20px;
+    }
+    
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .input-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    button {
+        margin-top: 4em;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 1.8rem;
+    }
+    
+    button:hover {
+        background-color: #3c8306;
+    }
+    
+    #result {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: red;
+
+    }
+
+}
+
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.449);
+   
+
+    .copywrite {
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (min-width: 900px) {
+
+    main {
+        
+        .calculator {
+            
+            max-width: 600px;
+        }
+
+        p {
+            margin:auto;
+            margin-top: 2em;
+            width: 70%;
+            //text-align: center;
+            font-size: 1.6rem;
+            //border: 1px solid red;
+        }
+
+
+    }
+    
+}

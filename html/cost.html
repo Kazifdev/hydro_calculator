@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power generation</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/cost.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+
+            <div class="logo">
+                <img src="/img/logo.png" alt="">
+                <a href="">Calculator</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Hydro</a></li>
+                </ul>
+            </nav>
+
+            <a href="mailto:kazifdev@outlook.com" target="_blank" class="header_cta">Contact us</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+
+            <a href="/index.html"><i class="fa fa-angle-left"> Home</i></a>
+
+
+            <div class="calculator">
+                <h2>Hydro Power Cost-Benefit Analysis</h2>
+                <div class="input-group">
+                    <label for="initialCost">Initial Investment Cost ($):</label>
+                    <input type="number" id="initialCost">
+                </div>
+                <div class="input-group">
+                    <label for="operationalCost">Annual Operational Cost ($):</label>
+                    <input type="number" id="operationalCost">
+                </div>
+                <div class="input-group">
+                    <label for="powerOutput">Expected Annual Power Output (kWh):</label>
+                    <input type="number" id="powerOutput">
+                </div>
+                <div class="input-group">
+                    <label for="electricityPrice">Local Electricity Price ($/kWh):</label>
+                    <input type="number" id="electricityPrice">
+                </div>
+                <button onclick="calculateCostBenefit()">Calculate</button>
+                <div id="result"></div>
+            </div>
+            <p><strong>Note: How to use the calculator: </strong>This tool enables users to analyze the economic feasibility of
+                implementing a hydroelectric power project. Users can input data such as initial investment cost,
+                operational costs, expected power output, and local electricity prices to determine the potential return
+                on investment and payback period.
+            </p>
+
+            <script src="/js/cost.js"></script>
+        </div>
+    </main>
+
+    <footer>
+       
+        <p class="copywrite">&copy; ~ Developed By Kazi Faruque ~, 2024</p>
+
+    </footer>
+
+
+</body>
+
+</html>
